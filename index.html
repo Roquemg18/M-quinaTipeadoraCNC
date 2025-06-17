@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CNC tecleadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CNC tecleadora</h1>
+        <h3>Alumnos: Roque Molina y Santi Tosoni</h3>
+        <h4>Materia: "por ahora en blanco"</h4>
+        <h4>Año: 2025</h4>
+
+        <form method="POST" action="/">
+            <input type="text" name="palabra" placeholder="Escribí una palabra..." required>
+            <button type="submit">Enviar</button>
+        </form>
+
+        {% if mensaje %}
+            <p class="mensaje">{{ mensaje }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
