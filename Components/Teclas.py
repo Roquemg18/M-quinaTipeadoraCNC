@@ -1,3 +1,12 @@
+# El Mapa de teclas (son posiciones relativas desde el origen)
+# Diccionario "teclas" que asocia cada tecla a una coordenada (X, Y) que representa su 
+# ubicación
+# relativa en el teclado
+# Pre-condiciones: el origen (0,0) es la tecla Ctrl inferior izquierda
+# Post-condiciones: permite utilizar nombres de teclas para realizar movimientos CNC 
+# precisos
+
+
 # Mapa de teclas (posiciones relativas desde el origen)
 teclas = teclas = {
     # Fila 0 — inferior
@@ -24,7 +33,4 @@ teclas = teclas = {
     "`": (4, 0), "1": (4, 1), "2": (4, 2), "3": (4, 3),
     "4": (4, 4), "5": (4, 5), "6": (4, 6), "7": (4, 7),
     "8": (4, 8), "9": (4, 9), "0": (4, 10), "?": (4, 11), "¿": (4, 12), "Backspace": (4, 13),
-
-    # Fila 5 — Esc y F1–F12 (solo si querés agregarla después)
-    # "Esc": (5, 0), "F1": (5, 1), ..., "F12": (5, 12)
 }

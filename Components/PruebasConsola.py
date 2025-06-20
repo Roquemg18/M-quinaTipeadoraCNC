@@ -5,6 +5,11 @@ from servomotor import inicializar_servo, cleanup as servo_cleanup
 
 GPIO.setmode(GPIO.BCM)
 
+# Este es el Script principal de prueba. Inicializa componentes, escribe un conjunto de
+# letras, y vuelve al origen.
+# @parametros: ninguno
+# Pre-condiciones: GPIO disponible y teclado conectado correctamente
+# Post-condiciones: Se escribe la palabra definida y se limpian los recursos
 try:
     inicializar_motores()
     inicializar_servo()
